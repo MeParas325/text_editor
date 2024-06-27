@@ -110,7 +110,7 @@ body{
     border-radius: 5px;
 }
 
-@media (width <= 840px) {
+@media (width <= 850px) {
     .container{
         padding: 2rem;
         height: 85vh;
