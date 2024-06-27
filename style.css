@@ -112,18 +112,17 @@ body{
 
 @media (width <= 840px) {
     .container{
-        padding: 0 2rem;
-        /* height: 85vh; */
-        background-color: red;
+        padding: 2rem;
+        height: 85vh;
         flex-direction: column;
     }
 
     .left{
-        height: 60vh;
+        width: 100%;
     }
 
     .right{
-        height: 60vh;
+        width: 100%;
     }
 }
 
