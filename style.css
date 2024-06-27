@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.container{
+    width: 100%;
+    max-width: 900px;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    height: 70vh;
+    flex-basis: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: -3px 10px 28px 7px rgba(0, 0, 0, 0.6);
+    border-radius: 13px;
+    position: relative;
+}
+
+.left span{
+    user-select: none;
+    cursor: grab;
+}
+
+.right{
+    padding: 3rem 0;
+    height: 70vh;
+    flex-basis: 47%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 13px;
+}
+
+.right .upper{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.right .upper select{
+    width: 100%;
+    padding: 0.2rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.upper .right-feature {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper .right-feature input {
+    flex-basis: 40%;
+}
+
+.upper .right-feature input:nth-child(1) {
+    padding: 0.2rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    height: 100%;
+}
+
+.upper .right-feature input:nth-child(2) {
+    height: 2.3rem;
+}
+
+.right .down{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.down input {
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.down button{
+    padding: 0.6rem ;
+    font-weight: 500;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+@media (width <= 840px) {
+    .container{
+        padding: 0 2rem;
+        /* height: 85vh; */
+        background-color: red;
+        flex-direction: column;
+    }
+
+    .left{
+        height: 60vh;
+    }
+
+    .right{
+        height: 60vh;
+    }
+}
+
+.undo-redo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.undo-redo button{
+    padding: 0.4rem ;
+    font-weight: 500;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.undo-redo button{
+    background-color: black;
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.undo-redo button:hover {
+    background-color: rgb(114, 102, 102);
+}
+

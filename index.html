@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Example undo icon using Material Icons -->
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <span id="main-text">Text</span>
+        </div>
+        <div class="right">
+            <div class="upper">
+                <select name="" id="inputFont">
+                    <option value="Lucida Sans">Lucida Sans</option>
+                    <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Segoe UI">Segoe UI</option>
+                </select>
+                <div class="right-feature">
+                    <input id="inputNumber" type="number" id="numberInput" value="32" min="32" max="50">
+
+                    <input id="inputColor" type="color" />
+                </div>
+            </div>
+            <div class="down">
+                <input id="text-input" type="text">
+                <button id="button">Add Text</button>
+            </div>
+        </div>
+    </div>
+    <div class="undo-redo">
+            <button id="redo-button"><i class="material-icons">redo</i> Redo</button>
+            <button id="undo-button"><i class="material-icons">undo</i> Undo</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
